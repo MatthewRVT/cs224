@@ -1,2 +1,2 @@
-# cs224
+# cs260
 this is for homework
