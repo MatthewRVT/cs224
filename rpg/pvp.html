@@ -3,63 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scores</title>
+    <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <header>
-      <h1>Simon<sup>&reg;</sup></h1>
-
       <nav>
         <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="play.html">Play</a></li>
-          <li><a href="scores.html">Scores</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="play.html"><button>Single Player</button></a></li>
+          <li><a href="pvp.html"><button>PvP</button></a></li>
+          <li><a href="character.html"><button>Character</button></a></li>
+          <li><a href="login.html"><button>Login</button></a></li>
         </menu>
       </nav>
-
-      <hr />
     </header>
 
     <main>
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Score</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>도윤 이</td>
-            <td>34</td>
-            <td>May 20, 2021</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Annie James</td>
-            <td>29</td>
-            <td>June 2, 2021</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Gunter Spears</td>
-            <td>7</td>
-            <td>July 3, 2020</td>
-          </tr>
-        </tbody>
-      </table>
+      <span>
+        <img width="400px" src="images/knight.png" alt="player model" />
+        <button>move 1</button>
+        <button>move 2</button>
+        <button>move 3</button>
+      </span>
+      <span>
+        <img width="400px" src="images/knight2.png" alt="enemy model" />
+        <button>enemy move 1</button>
+        <button>enemy move 2</button>
+        <button>enemy move 3</button>
+      </span>
     </main>
 
     <footer>
       <hr />
-      <span class="text-reset">Author Name(s)</span>
+      <span class="text-reset">Created by: Matthew Van Tuyl</span>
       <br />
-      <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
+      <a href="https://github.com/MatthewRVT/cs260/tree/main/rpg">GitHub</a>
     </footer>
   </body>
 </html>
