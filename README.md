@@ -7,6 +7,11 @@
 6. DB/Login - Store users, characters, and win/loss reord. Register and login users. Credentials securely stored in database. Can't fight in arena unless authenticated.
 7. WebSocket - when in the PvP arena a player will chose their move and it will then be broadcasted to their opponent at the end of their turn.
 
+## HTML
+- Added a page for PvP, PvE, Login, and viewing your characters
+- Added HTML for each of those pages
+- Added linking capabilities to/from each of those pages
+
 ## Below are the images, pardon the low quality
 
 # Home page view
