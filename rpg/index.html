@@ -10,20 +10,44 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body class="bg-secondary">
-    <header class="bg-info">
+    <header class="bg-accent navbar-brand">
       <nav>
         <menu>
-          <li><a href="index.html"><button type="button" class="btn btn-primary">Home</button></a></li>
-          <li><a href="play.html"><button type="button" class="btn btn-outline-primary">Single Player</button></a></li>
-          <li><a href="pvp.html"><button type="button" class="btn btn-outline-primary">PvP</button></a></li>
-          <li><a href="character.html"><button type="button" class="btn btn-outline-primary">Character</button></a></li>
-          <li><a href="login.html"><button type="button" class="btn btn-outline-primary">Login</button></a></li>
+          <li class = "nav-item"><a href="index.html"><button type="button" class="btn btn-primary">Home</button></a></li>
+          <li class = "nav-item"><a href="play.html"><button type="button" class="btn btn-outline-primary">PvE</button></a></li>
+          <li class = "nav-item"><a href="pvp.html"><button type="button" class="btn btn-outline-primary">PvP</button></a></li>
+          <li class = "nav-item"><a href="character.html"><button type="button" class="btn btn-outline-primary">Character</button></a></li>
         </menu>
       </nav>
     </header>
 
-    <main>
+    <!-- <main>
       <h1>Welcome to my RPG project. This is my RPG project for the Class CS 260. To login (to save your progress) select Login To play on your own select Single player. To match with someone else online select PvP. To view your characters select Characters</h1>
+    </main> -->
+
+    <main>
+      <h1>Welcome to my RPG project. This is my RPG project for the Class CS 260.</h1>
+      <h2>
+        <ul>
+          <li>Login on this page to save your progress.</li>
+          <li>To play offline single player select PvE</li>
+          <li>To match with someone else online select PvP.</li>
+          <li>To view your characters select Characters</li>
+        </ul>
+      </h2>
+      <form method="get" action="play.html">
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input class="form-control" type="text" placeholder="your@email.com" />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">🔒</span>
+          <input class="form-control" type="password" placeholder="password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="submit" class="btn btn-secondary">Create</button>
+      </form>
+      <div>This is where the plugin to display random dog pictures will go</div>
     </main>
 
     <footer>

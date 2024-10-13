@@ -8,28 +8,29 @@
 
     <link rel="stylesheet" href="style.css"/>
   </head>
-  <body>
-    <header>
+  <body class="bg-secondary">
+    <header class="bg-accent navbar-brand">
       <nav>
         <menu>
-          <li><a href="index.html"><button type="button" class="btn btn-outline-primary">Home</button></a></li>
-          <li><a href="play.html"><button type="button" class="btn btn-primary">Single Player</button></a></li>
-          <li><a href="pvp.html"><button type="button" class="btn btn-outline-primary">PvP</button></a></li>
-          <li><a href="character.html"><button type="button" class="btn btn-outline-primary">Character</button></a></li>
-          <li><a href="login.html"><button type="button" class="btn btn-outline-primary">Login</button></a></li>
+          <li class = "nav-item"><a href="index.html"><button type="button" class="btn btn-outline-primary">Home</button></a></li>
+          <li class = "nav-item"><a href="play.html"><button type="button" class="btn btn-primary">PvE</button></a></li>
+          <li class = "nav-item"><a href="pvp.html"><button type="button" class="btn btn-outline-primary">PvP</button></a></li>
+          <li class = "nav-item"><a href="character.html"><button type="button" class="btn btn-outline-primary">Character</button></a></li>
         </menu>
       </nav>
     </header>
 
-    <main>
-      <span>
-        <img width="400px" src="images/knight.png" alt="player model" />
-        <button>move 1</button>
-        <button>move 2</button>
-        <button>move 3</button>
+    <main class = "combat">
+      <span class = "entity">
+        <img class = "pic" src="images/knight.png" alt="player model" />
+        <div class = "moves">
+          <button type="button" class="btn btn-danger">move 1</button>
+          <button>move 2</button>
+          <button>move 3</button>
+        </div>
       </span>
-      <span>
-        <img width="400px" src="images/slime.png" alt="enemy model" />
+      <span class = "entity">
+        <img class = "pic" src="images/slime.png" alt="enemy model" />
         <button>enemy move 1</button>
         <button>enemy move 2</button>
         <button>enemy move 3</button>

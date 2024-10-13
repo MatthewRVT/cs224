@@ -1,7 +1,9 @@
 $theme-colors: (
-  "primary": #541412,
-  "secondary": #E9D4A9,
-  "info":#64503B
+  "accent": #541412,
+  "secondary": #7A7E85,
+  "info":#64503B,
+  "primary":#C3B189,
+  "danger":#200697
 );
 
 body {
@@ -11,7 +13,9 @@ body {
   }
   
   header {
-    flex: 0 80px;
+    display:flex;
+    width:100%;
+    height:20%;
   }
   
   main {
@@ -38,26 +42,61 @@ body {
     padding-left: 0.3em;
     border-bottom: solid rgb(182, 182, 182) thin;
   }
+
+  .entity {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    // border-radius: 1px;
+  }
+
+  .combat {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    // align-items: center;
+  }
+
+  .pic {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    flex: 1 1 auto;
+    /* Allow images to grow and shrink */
+    object-fit: cover;
+  }
+
+  .moves {
+    // display: flex;
+    // flex:1;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  // .move {
+
+  // }
   
   menu .nav-item {
-    padding: 0 0.3em;
+    padding: 0 0.2em;
   }
   
   footer a {
     float: right;
   }
   
-  @media (max-height: 600px) {
-    header {
-      display: none;
-    }
-    footer {
-      display: none;
-    }
-    main {
-      flex: 1 100vh;
-    }
-  }
+  // @media (max-height: 600px) {
+  //   header {
+  //     display: none;
+  //   }
+  //   footer {
+  //     display: none;
+  //   }
+  //   main {
+  //     flex: 1 100vh;
+  //   }
+  // }
   
 
 
