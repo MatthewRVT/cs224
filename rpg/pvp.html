@@ -22,16 +22,24 @@
 
     <main class = "combat">
       <span class = "entity">
-        <img class = "pic" src="images/knight.png" alt="player model" />
-        <button>move 1</button>
-        <button>move 2</button>
-        <button>move 3</button>
+        <span class = "pic-container">
+          <img class = "pic" src="images/knight.png" alt="player model" />
+        </span>
+        <div class = "moves">
+          <button type="button" class="btn btn-danger move">move 1</button>
+          <button type="button" class="btn btn-danger move">move 2</button>
+          <button type="button" class="btn btn-danger move">move 3</button>
+        </div>
       </span>
       <span class = "entity">
-        <img class = "pic" src="images/knight2.png" alt="enemy model" />
-        <button>enemy move 1</button>
-        <button>enemy move 2</button>
-        <button>enemy move 3</button>
+        <span class = "pic-container">
+          <img class = "pic" src="images/knight2.png" alt="enemy model" />
+        </span>
+        <div class = "moves">
+          <button type="button" class="btn btn-danger">enemy move 1</button>
+          <button type="button" class="btn btn-danger">enemy move 2</button>
+          <button type="button" class="btn btn-danger">enemy move 3</button>
+        </div>
       </span>
     </main>
 
@@ -39,7 +47,7 @@
       <hr />
       <span class="text-reset">Created by: Matthew Van Tuyl</span>
       <br />
-      <a href="https://github.com/MatthewRVT/cs260/tree/main/rpg">GitHub</a>
+      <a href="https://github.com/MatthewRVT/cs260/tree/main/rpg"> GitHub</a>
     </footer>
   </body>
 </html>
