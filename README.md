@@ -12,6 +12,11 @@
 - Added HTML for each of those pages
 - Added linking capabilities to/from each of those pages
 
+## CSS
+- Added styling to the header footer and main sections of each page
+- Used bootstrap elements to make things look nicer
+- Used Sass to generate Bootstrap elements with the styling and CSS I want
+
 ## Below are the images, pardon the low quality
 
 # Home page view
