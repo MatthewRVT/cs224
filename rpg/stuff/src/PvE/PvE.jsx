@@ -17,7 +17,7 @@ export function PvE(props) {
     <div className = "combat">
       <span className = "entity">
         <span className = "pic-container">
-          <img className = "pic" src="../../public/knight.png" alt="player model" />
+          <img className = "pic" src="/knight.png" alt="player model" />
         </span>
         <div className = "moves">
           <button type="button" className="btn btn-danger move">move 1</button>
@@ -27,7 +27,7 @@ export function PvE(props) {
       </span>
       <span className = "entity">
         <span className = "pic-container">
-          <img className = "pic" src="../../public/slime.png" alt="enemy model" />
+          <img className = "pic" src="/slime.png" alt="enemy model" />
         </span>
         <div className = "moves">
           <button type="button" className="btn btn-danger">enemy move 1</button>

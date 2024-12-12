@@ -9,7 +9,7 @@ export function Scores({ userName, authState, onAuthChange }) {
     <div className = "combat">
       <span className = "entity">
         <span className = "pic-container">
-          <img className = "pic" src="../../public/knight.png" alt="player model" />
+          <img className = "pic" src="/knight.png" alt="player model" />
         </span>
         <div className = "moves">
           <button type="button" className="btn btn-danger move">move 1</button>
@@ -19,7 +19,7 @@ export function Scores({ userName, authState, onAuthChange }) {
       </span>
       <span className = "entity">
         <span className = "pic-container">
-          <img className = "pic" src="../../public/knight.png" alt="enemy model" />
+          <img className = "pic" src="/knight.png" alt="enemy model" />
         </span>
         <div className = "moves">
           <button type="button" className="btn btn-danger">move 1</button>
