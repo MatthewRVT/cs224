@@ -1,0 +1,184 @@
+$theme-colors: (
+  "accent": #541412,
+  "secondary": #7A7E85,
+  "info":#64503B,
+  "primary":#C3B189,
+  "danger":#200697
+);
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    // min-width: 375px;
+  }
+  
+  header {
+    display:flex;
+    width:100%;
+    height:10%;
+  }
+  
+  
+  footer {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    
+  }
+  
+  menu {
+    // flex: 1;
+    display: flex;
+    /*  overwrite Bootstrap so the menu does not wrap */
+    flex-direction: row !important;
+    list-style: none;
+  }
+  
+  .navbar-brand {
+    padding-left: 0.3em;
+    border-bottom: solid rgb(182, 182, 182) thin;
+  }
+
+  .combat {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    display: flex;
+    // align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    // justify-content: center;
+    justify-self: center;
+    // border: 1px solid;
+  }
+
+  .entity {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    border: 1px solid;
+  }
+
+  .pic-container {
+    display:flex;
+    height:85%;
+    // width:70%;
+    aspect-ratio: 1/1;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    // border-radius: 1px;
+    border: 1px solid;
+    
+
+  }
+
+  .pic {
+    max-height: 100%;
+    width: auto;
+
+
+    // max-height: 80%;
+    // max-width: 80%;
+    // height: auto;
+    // width: auto;
+    // /* Maintain aspect ratio */
+    display: flex;
+    // /* Allow images to grow and shrink */
+    // // object-fit: cover;
+    // border: 1px solid;
+  }
+
+  .moves {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    // border: 1px solid;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 15%;
+  }
+
+  .move {
+    width: 20%;
+    height: 100%;
+  }
+
+  // .pass {
+  //   width: 50%;
+  // }
+
+  // .move {
+
+  // }
+  
+  menu .nav-item {
+    padding: 0 0.2em;
+  }
+  
+  footer a {
+    float: right;
+  }
+  
+  @media (max-height: 600px) {
+    header {
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    main {
+      flex: 1 100vh;
+    }
+  }
+
+  body.pass {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+  }
+  
+  header.pass {
+    flex: 0 80px;
+  }
+  
+  main.pass {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .another {
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+  }
+
+  .dog {
+    width: 50%;
+    border: 1px solid;
+  }
+
+  .collection {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    display: flex;
+    // align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    // justify-content: center;
+    justify-self: center;
+    // border: 1px solid;
+  }
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
