@@ -14,19 +14,7 @@ export function PvE(props) {
   }, []);
 
   return (
-    <div className="bg-secondary">
-    {/* <header className="bg-accent navbar-brand">
-      <nav>
-        <menu>
-          <li className = "nav-item"><a href="index.html"><button type="button" className="btn btn-outline-primary">Home</button></a></li>
-          <li className = "nav-item"><a href="play.html"><button type="button" className="btn btn-primary">PvE</button></a></li>
-          <li className = "nav-item"><a href="pvp.html"><button type="button" className="btn btn-outline-primary">PvP</button></a></li>
-          <li className = "nav-item"><a href="character.html"><button type="button" className="btn btn-outline-primary">Character</button></a></li>
-        </menu>
-      </nav>
-    </header> */}
-
-    <main className = "combat">
+    <div className = "combat">
       <span className = "entity">
         <span className = "pic-container">
           <img className = "pic" src="../../public/knight.png" alt="player model" />
@@ -47,14 +35,6 @@ export function PvE(props) {
           <button type="button" className="btn btn-danger">enemy move 3</button>
         </div>
       </span>
-    </main>
-
-    <footer>
-      <hr />
-      <span className="text-reset">Created by: Matthew Van Tuyl</span>
-      <br />
-      <a href="https://github.com/MatthewRVT/cs260/tree/main">GitHub</a>
-    </footer>
-  </div>
+    </div>
   );
 }

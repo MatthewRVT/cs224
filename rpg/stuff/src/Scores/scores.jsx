@@ -1,53 +1,33 @@
 import React from 'react';
+import '../../style.css';
 
-import './scores.css';
 
-export function Scores() {
-  const [scores, setScores] = React.useState([]);
-
-  // Demonstrates calling a service asynchronously so that
-  // React can properly update state objects with the results.
-  React.useEffect(() => {
-    const scoresText = localStorage.getItem('scores');
-    if (scoresText) {
-      setScores(JSON.parse(scoresText));
-    }
-  }, []);
-
-  // Demonstrates rendering an array with React
-  const scoreRows = [];
-  if (scores.length) {
-    for (const [i, score] of scores.entries()) {
-      scoreRows.push(
-        <tr key={i}>
-          <td>{i}</td>
-          <td>{score.name.split('@')[0]}</td>
-          <td>{score.score}</td>
-          <td>{score.date}</td>
-        </tr>
-      );
-    }
-  } else {
-    scoreRows.push(
-      <tr key='0'>
-        <td colSpan='4'>Be the first to score</td>
-      </tr>
-    );
-  }
-
+export function Scores({ userName, authState, onAuthChange }) {
   return (
-    <main className='container-fluid bg-secondary text-center'>
-      <table className='table table-warning table-striped-columns'>
-        <thead className='table-dark'>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Score</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody id='scores'>{scoreRows}</tbody>
-      </table>
-    </main>
+    <span className = "combat">
+      <h2>Here is where you can see previously used characters all in a row like so:</h2>
+    <div className = "combat">
+      <span className = "entity">
+        <span className = "pic-container">
+          <img className = "pic" src="../../public/knight.png" alt="player model" />
+        </span>
+        <div className = "moves">
+          <button type="button" className="btn btn-danger move">move 1</button>
+          <button type="button" className="btn btn-danger move">move 2</button>
+          <button type="button" className="btn btn-danger move">move 3</button>
+        </div>
+      </span>
+      <span className = "entity">
+        <span className = "pic-container">
+          <img className = "pic" src="../../public/knight.png" alt="enemy model" />
+        </span>
+        <div className = "moves">
+          <button type="button" className="btn btn-danger">move 1</button>
+          <button type="button" className="btn btn-danger">move 2</button>
+          <button type="button" className="btn btn-danger">move 3</button>
+        </div>
+      </span>
+    </div>
+    </span>
   );
 }
