@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
 import { Play } from './Play/Play';
-import { Scores } from './scores/scores';
+import { Character } from './scores/scores';
 import { PvE } from './PvE/PvE';
 import { AuthState } from './login/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,24 +18,24 @@ const [authState, setAuthState] = React.useState(currentAuthState);
     <nav>
       <menu>
       <li className="nav-item">
-      <button type="button" className="btn btn-outline-primary"><NavLink className='nav-link' to=''>
-            Home
-          </NavLink></button>
+      <NavLink className='nav-link' to=''>
+        <button type="button" className="btn btn-outline-primary">Home</button>
+      </NavLink>
       </li>
       <li className="nav-item">
-      <button type="button" className="btn btn-outline-primary"><NavLink className='nav-link' to='Play'>
-            Play
-          </NavLink></button>
+      <NavLink className='nav-link' to='/play'>
+        <button type="button" className="btn btn-outline-primary">Play</button>
+      </NavLink>
       </li>
       <li className="nav-item">
-      <button type="button" className="btn btn-outline-primary"><NavLink className='nav-link' to='PvE'>
-            PvE
-          </NavLink></button>
+      <NavLink className='nav-link' to='/PvE'>
+        <button type="button" className="btn btn-outline-primary">PvE</button>
+      </NavLink>
       </li>
       <li className="nav-item">
-      <button type="button" className="btn btn-outline-primary"><NavLink className='nav-link' to='scores'>
-            Scores
-          </NavLink></button>
+      <NavLink className='nav-link' to='/character'>
+        <button type="button" className="btn btn-outline-primary">Character</button>
+      </NavLink>
       </li>
       </menu>
     </nav>
@@ -59,7 +59,7 @@ const [authState, setAuthState] = React.useState(currentAuthState);
           />
           {/* <Route path='/login' element={<Login />} /> */}
           <Route path='/Play' element={<Play userName={userName} />} />
-          <Route path='/scores' element={<Scores />} />
+          <Route path='/Character' element={<Character />} />
           <Route path='/PvE' element={<PvE />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

@@ -2,8 +2,10 @@ import React from 'react';
 import '../../style.css';
 
 
-export function Play(props) {
+export function Character() {
   return (
+    <span className = "combat">
+      <h2>Here is where you can see previously used characters all in a row like so:</h2>
     <div className = "combat">
       <span className = "entity">
         <span className = "pic-container">
@@ -17,14 +19,15 @@ export function Play(props) {
       </span>
       <span className = "entity">
         <span className = "pic-container">
-          <img className = "pic" src="/knight2.png" alt="enemy model" />
+          <img className = "pic" src="/knight.png" alt="enemy model" />
         </span>
         <div className = "moves">
-          <button type="button" className="btn btn-danger">enemy move 1</button>
-          <button type="button" className="btn btn-danger">enemy move 2</button>
-          <button type="button" className="btn btn-danger">enemy move 3</button>
+          <button type="button" className="btn btn-danger">move 1</button>
+          <button type="button" className="btn btn-danger">move 2</button>
+          <button type="button" className="btn btn-danger">move 3</button>
         </div>
       </span>
     </div>
+    </span>
   );
 }

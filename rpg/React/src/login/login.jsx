@@ -1,10 +1,6 @@
 import React from 'react';
 import '../../style.css';
 
-import { Unauthenticated } from './unauthenticated';
-import { Authenticated } from './authenticated';
-import { AuthState } from './authState';
-
 export function Login({ userName, authState, onAuthChange }) {
   return (
   <main className = "pass">
