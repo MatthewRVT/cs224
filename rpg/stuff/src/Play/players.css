@@ -1,0 +1,9 @@
+.combat {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  justify-self: center; }
