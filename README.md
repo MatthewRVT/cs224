@@ -17,6 +17,12 @@
 - Used bootstrap elements to make things look nicer
 - Used Sass to generate Bootstrap elements with the styling and CSS I want
 
+## React
+- Added Vite bundling
+- Using react and Vite now pull up testing with npm run dev
+- using some bootstrap components much easier now with Vite
+- ported over all the HTML and CSS
+
 ## Below are the images, pardon the low quality
 
 # Home page view
